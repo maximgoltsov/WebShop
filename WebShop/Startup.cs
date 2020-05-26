@@ -36,7 +36,7 @@ namespace WebShop
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
+                endpoints.MapGet("/greeting", async context =>
                 {
                     await context.Response.WriteAsync(Configuration["MyVar"]);
                 });
