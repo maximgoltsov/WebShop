@@ -17,7 +17,8 @@ namespace WebShop.Controllers
                 Surname = "Ivanov",
                 FirstName = "Ivan",
                 Patronymic = "Ivanovich",
-                Age = 50
+                Age = 50,
+                BirthDay = new DateTime()
             },
             new Employee
             {
@@ -25,7 +26,8 @@ namespace WebShop.Controllers
                 Surname = "Ivanov2",
                 FirstName = "Ivan2",
                 Patronymic = "Ivanovich2",
-                Age = 52
+                Age = 52,
+                BirthDay = new DateTime().AddDays(3)
             },
             new Employee
             {
@@ -33,7 +35,8 @@ namespace WebShop.Controllers
                 Surname = "Ivanov3",
                 FirstName = "Ivan3",
                 Patronymic = "Ivanovich3",
-                Age = 53
+                Age = 53,
+                BirthDay = new DateTime().AddDays(5)
             },
         };
         public IActionResult Index()
